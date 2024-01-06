@@ -1,31 +1,24 @@
-import { StyleSheet } from 'react-native';
+import React from "react";
+import { Link, Tabs, useLocalSearchParams } from "expo-router";
+import { View } from "@/components/Themed";
 
-import EditScreenInfo from '../../components/EditScreenInfo';
-import { Text, View } from '../../components/Themed';
+const Page = () => {
 
-export default function TabOneScreen() {
+
+  
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
-    </View>
+ <View>
+  <Link href={"/(modals)/login"}>
+    Login
+  </Link>
+  <Link href={"/(modals)/booking"}>
+    Booking
+  </Link>
+  <Link href={"/listing/1234"}>
+    Listing Details
+  </Link>
+ </View>
   );
-}
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  title: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-  separator: {
-    marginVertical: 30,
-    height: 1,
-    width: '80%',
-  },
-});
+export default Page;
