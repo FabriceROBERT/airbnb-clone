@@ -27,6 +27,7 @@ export const defaultStyles = StyleSheet.create({
     btnText: {
         color:'white',
         fontSize:16,
+        fontFamily: 'RobotoMono'
     },
 
     btnIcon: {

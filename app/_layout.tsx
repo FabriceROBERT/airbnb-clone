@@ -42,7 +42,8 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    RobotoMono: require('../assets/fonts/Montserrat-Bold.ttf'),
+    RobotoMono: require('../assets/fonts/Montserrat-SemiBold.ttf'),
+    Mono: require('../assets/fonts/Montserrat-Bold.ttf'),
     ...FontAwesome.font,
   })
 
