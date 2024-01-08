@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Tabs, useLocalSearchParams } from "expo-router";
-import { View } from "@/components/Themed";
+import { View } from "react-native";
 
 const Page = () => {
 
