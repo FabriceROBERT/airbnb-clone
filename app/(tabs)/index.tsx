@@ -1,22 +1,21 @@
 import React from "react";
-import { Link, Tabs, useLocalSearchParams } from "expo-router";
+import { Link, Stack, Tabs, useLocalSearchParams } from "expo-router";
 import { View } from "react-native";
+import ExploreHeader from "@/components/ExploreHeader";
+import Listing from "@/components/Listing";
 
 const Page = () => {
 
 
   
   return (
- <View>
-  <Link href={"/(modals)/login"}>
-    Login
-  </Link>
-  <Link href={"/(modals)/booking"}>
-    Booking
-  </Link>
-  <Link href={"/listing/1234"}>
-    Listing Details
-  </Link>
+ <View style={{flex:1}}>
+ <Stack.Screen options={{
+  header: () => <ExploreHeader/>
+ }} />
+ <Listing/>
+
+ 
  </View>
   );
 };

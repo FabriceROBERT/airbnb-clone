@@ -19,7 +19,7 @@ export const defaultStyles = StyleSheet.create({
     btn: {
         backgroundColor: Colors.primary,
         height:50,
-        fontFamily:'RobotoMono',
+        fontFamily:'Mono',
         borderRadius:8,
         justifyContent:'center',
         alignItems:'center',
@@ -27,7 +27,7 @@ export const defaultStyles = StyleSheet.create({
     btnText: {
         color:'white',
         fontSize:16,
-        fontFamily: 'RobotoMono'
+        fontFamily: 'Mono'
     },
 
     btnIcon: {

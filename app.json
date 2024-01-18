@@ -4,7 +4,14 @@
     "entryPoint": "./_layout.tsx",
     "slug": "airbnb-clone",
     "version": "1.0.0",
-    
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "auth": {
+      "auth0Domain": "dev-4yth0qnvfuocf4xn.eu.auth0.com"
+    },
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "myapp",
@@ -13,19 +20,23 @@
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff",
-      "assetPlugins": ["expo-asset/fonts"]
+      "assetPlugins": [
+        "expo-asset/fonts"
+      ]
     },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.auth0samples"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.auth0samples"
     },
     "web": {
       "bundler": "metro",
@@ -38,6 +49,14 @@
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "539b0021-95f1-44b7-b4a5-6e1c9c79b071"
+      }
     }
   }
 }
